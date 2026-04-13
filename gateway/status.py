@@ -28,6 +28,8 @@ if sys.platform == "win32":
 else:
     import fcntl
 
+_UNSET = object()
+
 _GATEWAY_KIND = "hermes-gateway"
 _RUNTIME_STATUS_FILE = "gateway_state.json"
 _LOCKS_DIRNAME = "gateway-locks"
